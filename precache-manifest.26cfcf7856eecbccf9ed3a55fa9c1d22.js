@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd80dd07e694ceaeb29632a71754c860",
+    "revision": "fe74c2a1da7f7e9bce43452139a4a5e9",
     "url": "/ReactUrbennAdminPanel/index.html"
   },
   {
-    "revision": "3c7a10083b2370b0cadd",
+    "revision": "2de6277127e1895b74ff",
     "url": "/ReactUrbennAdminPanel/static/css/3.6cb858c5.chunk.css"
   },
   {
-    "revision": "f85ce0c844ad33e81b95",
+    "revision": "6403023cb2a770bf1337",
     "url": "/ReactUrbennAdminPanel/static/css/main.7eea05e3.chunk.css"
   },
   {
-    "revision": "0678eeb6edbf3d470718",
-    "url": "/ReactUrbennAdminPanel/static/js/2.25c78bd8.chunk.js"
+    "revision": "10dc089e62b162f6d7d8",
+    "url": "/ReactUrbennAdminPanel/static/js/2.d7ab2bfb.chunk.js"
   },
   {
-    "revision": "3c7a10083b2370b0cadd",
-    "url": "/ReactUrbennAdminPanel/static/js/3.3a196b06.chunk.js"
+    "revision": "2de6277127e1895b74ff",
+    "url": "/ReactUrbennAdminPanel/static/js/3.56fb4ef1.chunk.js"
   },
   {
-    "revision": "d85c2ff113f6cb0cdc06",
-    "url": "/ReactUrbennAdminPanel/static/js/4.7d7c60fa.chunk.js"
+    "revision": "f124f111b5c463c26475",
+    "url": "/ReactUrbennAdminPanel/static/js/4.0b6893d8.chunk.js"
   },
   {
-    "revision": "920738d73a538751ea3b",
-    "url": "/ReactUrbennAdminPanel/static/js/5.3477aef2.chunk.js"
+    "revision": "fdcf0900455434d83c91",
+    "url": "/ReactUrbennAdminPanel/static/js/5.ac86c48a.chunk.js"
   },
   {
-    "revision": "f85ce0c844ad33e81b95",
-    "url": "/ReactUrbennAdminPanel/static/js/main.529bde76.chunk.js"
+    "revision": "6403023cb2a770bf1337",
+    "url": "/ReactUrbennAdminPanel/static/js/main.7564f883.chunk.js"
   },
   {
-    "revision": "06c491b79f1de7a70158",
-    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.72a00066.js"
+    "revision": "b2cf59efd3d08b73be9b",
+    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.72e54666.js"
   },
   {
     "revision": "0cb0b9c589c0624c9c78dd3d83e946f6",
