@@ -34,16 +34,17 @@ const Register = () => {
 
                     <Dropdown>
                       <Dropdown.Toggle variant="btn btn-outline-primary" id="dropdownMenuOutlineButton1">
-                        Название категории
+                        Разделы
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
                         <CheckboxElem textValue='text'/>
                         <CheckboxElem textValue='text'/>
-                        <Dropdown.Header></Dropdown.Header>
+                        <Dropdown.Header>title1</Dropdown.Header>
                         <CheckboxElem textValue='text'/>
                         <CheckboxElem textValue='text'/>
-                        {/*<Dropdown.Item> <CheckboxElem textValue='text'/></Dropdown.Item>*/}
+                        {/*<Dropdown.Item> ddddd</Dropdown.Item>*/}
+                        {/*<Dropdown.Divider>home</Dropdown.Divider>*/}
                       </Dropdown.Menu>
                     </Dropdown>
 
@@ -51,34 +52,19 @@ const Register = () => {
                   <div className="form-group  my-checkbox-component">
                     <Dropdown>
                       <Dropdown.Toggle variant="btn btn-outline-primary" id="dropdownMenuOutlineButton1">
-                        Продавцы
+                           Продавцы
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
+                        <CheckboxElem textValue='text1'/>
                         <CheckboxElem textValue='text'/>
+                        <Dropdown.Header>title</Dropdown.Header>
                         <CheckboxElem textValue='text'/>
-                        <Dropdown.Header></Dropdown.Header>
                         <CheckboxElem textValue='text'/>
                         <CheckboxElem textValue='text'/>
                         {/*<Dropdown.Item> <CheckboxElem textValue='text'/></Dropdown.Item>*/}
                       </Dropdown.Menu>
                     </Dropdown>
-                    {/*<select className="form-control form-control-lg" id="exampleFormControlSelect2">
-                      <option></option>
-                      <option>Покупатели</option>
-                      <option>ТК1</option>
-                      <option>ТК2</option>
-                      <option>ТК3</option>
-                      <option>
-                        <div className={'form-check'}>
-                          <label className="form-check-label text-muted">
-                            <input type="checkbox" className="form-check-input"/>
-                            <i className="input-helper"/>
-                            I agree to all Terms & Conditions
-                          </label>
-                        </div>
-                      </option>
-                    </select>*/}
                   </div>
                   <div className="form-group">
                     <input type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" />

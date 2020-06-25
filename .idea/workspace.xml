@@ -11,15 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fea28cee-deda-473d-8b9a-338c1ee42303" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/_mystyle.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/_utilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/components/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/components/_forms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/testController/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/testController/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/classes/AppController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/classes/AppOperation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/operations/usersOperation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/operations/usersOperation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/AppRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AppRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/shared/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/shared/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/user-pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/user-pages/Register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -48,6 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -110,7 +107,7 @@
       <workItem from="1592847630821" duration="52058000" />
       <workItem from="1593002859244" duration="396000" />
       <workItem from="1593003258022" duration="12972000" />
-      <workItem from="1593065213776" duration="24383000" />
+      <workItem from="1593065213776" duration="28279000" />
     </task>
     <servers />
   </component>
