@@ -48,7 +48,7 @@ const Login2 = function ({history ,test, login}){
             <div className="col-lg-6 d-flex align-items-center justify-content-center">
               <div className="auth-form-transparent text-left p-3">
                 <div className="brand-logo">
-                  <img src={require("../../assets/images/urbenn-logo-no-text.svg")} alt="logo" />
+                  <img src={require("../../assets/images/urbenn-logo.svg")} alt="logo" />
                 </div>
                 <h6 className="font-weight-light">Добро пожаловать!</h6>
                 <form className="pt-3">
