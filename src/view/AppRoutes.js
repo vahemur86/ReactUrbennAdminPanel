@@ -98,7 +98,7 @@ class AppRoutes extends Component {
 
             <Route path="/user-pages/login-1" component={ Login } />
             <Route exact path="/dashboard" component={ Dashboard } />
-            <Redirect to="user-pages/login-1" />
+            <Redirect to="/user-pages/login-1" />
        {/*   <Route path="/user-pages/login-2" component={ Login2 } />
           <Route path="/user-pages/register-1" component={ Register1 } />
           <Route path="/user-pages/register-2" component={ Register2 } />

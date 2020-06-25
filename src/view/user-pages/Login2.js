@@ -50,17 +50,15 @@ const Login2 = function ({history ,test, login}){
                 <div className="brand-logo">
                   <img src={require("../../assets/images/urbenn-logo-no-text.svg")} alt="logo" />
                 </div>
-                <h4>Welcome back!</h4>
                 <h6 className="font-weight-light">Добро пожаловать!</h6>
                 <form className="pt-3">
                     {
                         (isSuccess ===false) && <div
                             role="alert"
-                            className="fade alert alert-danger show"> Incorrect password or username
+                            className="fade alert alert-danger show"> Неверный логин или пароль
                         </div>
                     }
                   <div className="form-group">
-                    <label>Username</label>
                     <div className="input-group">
                       <div className="input-group-prepend bg-transparent">
                         <span className="input-group-text bg-transparent border-right-0">
@@ -75,7 +73,6 @@ const Login2 = function ({history ,test, login}){
                     </div>
                   </div>
                   <div className="form-group">
-                    <label>Пароль</label>
                     <div className="input-group">
                       <div className="input-group-prepend bg-transparent">
                         <span className="input-group-text bg-transparent border-right-0">
