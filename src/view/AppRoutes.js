@@ -4,6 +4,8 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Spinner from './shared/Spinner';
 const Login = lazy(() => import('./user-pages/Login2'));
 const Dashboard = lazy(() => import('./components/dashboard/Dashboard'));
+const Register1 = lazy(() => import('./user-pages/Register'));
+// const Register2 = lazy(() => import('./user-pages/Register2'));
 // const KanbanBoard = lazy(() => import('./components/apps/KanbanBoard'));
 // const Chats = lazy(() => import('./components/apps/Chats'));
 // const TodoList = lazy( () => import('./components/apps/TodoList'));
@@ -65,8 +67,7 @@ const Dashboard = lazy(() => import('./components/dashboard/Dashboard'));
 // const Error500 = lazy(() => import('./components/error-pages/Error500'));
 //
 // const Login2 = lazy(() => import('./user-pages/Login2'));
-// const Register1 = lazy(() => import('./user-pages/Register'));
-// const Register2 = lazy(() => import('./user-pages/Register2'));
+
 // const Lockscreen = lazy(() => import('./user-pages/Lockscreen'));
 //
 // const BlankPage = lazy(() => import('./components/general-pages/BlankPage'));
@@ -98,9 +99,10 @@ class AppRoutes extends Component {
 
             <Route path="/user-pages/login-1" component={ Login } />
             <Route exact path="/dashboard" component={ Dashboard } />
+            <Route path="/user-pages/register-1" component={ Register1 } />
             <Redirect to="/user-pages/login-1" />
        {/*   <Route path="/user-pages/login-2" component={ Login2 } />
-          <Route path="/user-pages/register-1" component={ Register1 } />
+
           <Route path="/user-pages/register-2" component={ Register2 } />
           <Route path="/user-pages/lockscreen" component={ Lockscreen } />*/}
 

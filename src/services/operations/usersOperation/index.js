@@ -1,9 +1,7 @@
-import Operations from "../../../core/classes/AppOperation";
 import responseErrorCheck from "../../../core/helpers/responseErrorChecker";
 
-class UsersOperation extends Operations{
+class UsersOperation {
     constructor(usersApiHandler) {
-        super();
         this.usersApiHandler = usersApiHandler;
     }
 

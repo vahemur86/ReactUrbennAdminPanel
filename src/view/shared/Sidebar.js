@@ -76,7 +76,7 @@ class Sidebar extends Component {
               <ul className="nav flex-column sub-menu">
                 <li className="nav-item">
                   <Link className={ this.isPathActive('/apps/kanban-board') ? 'nav-link active' : 'nav-link' }
-                        to="/dashboard">  Создать категорию
+                        to="/user-pages/register-1">  Создать категорию
                   </Link></li>
                 <li className="nav-item">
                   <Link className={ this.isPathActive('/apps/todo-list') ? 'nav-link active' : 'nav-link' }

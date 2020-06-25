@@ -3,6 +3,18 @@
 .form-group {
   margin-bottom: 1.5rem;
 }
+.my-checkbox-component{
+  &.form-group{
+    button{
+      width: 100%;
+      text-align: right;
+
+     &.btn-outline-primary.dropdown-toggl{
+       background-color: red;
+     }
+    }
+  }
+}
 
 .input-group-append,
 .input-group-prepend {

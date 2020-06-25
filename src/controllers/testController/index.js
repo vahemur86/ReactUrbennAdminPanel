@@ -1,9 +1,7 @@
-import Controller from "../../core/classes/AppController";
 import {rxGetTestDone, rxGetTestPending} from "../../state-management/actions/testAction";
 
-class TestController extends Controller {
+class TestController  {
   constructor(testOperations) {
-    super();
     this.testOperations = testOperations;
   }
 

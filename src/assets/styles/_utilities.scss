@@ -1,5 +1,9 @@
-/* Utilities */
-
+classNames/* Utilities */
+.my-checkbox-component{
+  button{
+    width: 100%;
+  }
+}
 .grid-margin {
   margin-bottom: $card-spacing-y;
 }
