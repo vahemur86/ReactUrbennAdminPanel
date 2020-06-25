@@ -62,16 +62,37 @@ class Sidebar extends Component {
         <ul className="nav">
           <li className={ this.isPathActive('/dashboard') ? 'nav-item active' : 'nav-item' }>
             <Link className="nav-link" to="/dashboard">
-              <i className="ti-home menu-icon"></i>
-              <span className="menu-title">Dashboard</span>
+              <i className="ti-home menu-icon"/>
+              <span className="menu-title">Обзор</span>
             </Link>
           </li>
-         {/* <li className={ this.isPathActive('/widgets') ? 'nav-item active' : 'nav-item' }>
+          <li className={ this.isPathActive('/apps') ? 'nav-item active' : 'nav-item' }>
+            <div className={ this.state.appsMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('appsMenuOpen')} data-toggle="collapse">
+              <i className="ti-layout menu-icon"/>
+              <span className="menu-title">Администратор</span>
+              <i className="menu-arrow"/>
+            </div>
+            <Collapse in={ this.state.appsMenuOpen }>
+              <ul className="nav flex-column sub-menu">
+                <li className="nav-item">
+                  <Link className={ this.isPathActive('/apps/kanban-board') ? 'nav-link active' : 'nav-link' }
+                        to="/dashboard">  Создать категорию
+                  </Link></li>
+                <li className="nav-item">
+                  <Link className={ this.isPathActive('/apps/todo-list') ? 'nav-link active' : 'nav-link' }
+                        to="/dashboard">Создать пользователя</Link></li>
+              </ul>
+            </Collapse>
+          </li>
+
+          {/*
+          <li className={ this.isPathActive('/widgets') ? 'nav-item active' : 'nav-item' }>
             <Link className="nav-link" to="/widgets">
               <i className="ti-settings menu-icon"></i>
               <span className="menu-title">Widgets</span>
             </Link>
           </li>
+
           <li className={ this.isPathActive('/apps') ? 'nav-item active' : 'nav-item' }>
             <div className={ this.state.appsMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('appsMenuOpen')} data-toggle="collapse">
               <i className="ti-layout menu-icon"></i>
