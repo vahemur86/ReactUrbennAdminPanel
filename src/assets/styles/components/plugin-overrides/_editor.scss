@@ -1,0 +1,12 @@
+.editor-toolbar {
+  button {
+    color: $body-color;
+  }
+}
+.ql-formats {
+  button {
+      .ql-stroke {
+        stroke: $body-color;
+      }
+  }
+}

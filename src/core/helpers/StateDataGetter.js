@@ -1,0 +1,1 @@
+export const getLineUps = state => state.lineups;
