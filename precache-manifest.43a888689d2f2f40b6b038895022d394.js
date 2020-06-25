@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0935ba6493c4bf79af532d9643353f7f",
+    "revision": "8ed262b0700ea7e2b71b0d12da556180",
     "url": "/ReactUrbennAdminPanel/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactUrbennAdminPanel/static/css/3.6cb858c5.chunk.css"
   },
   {
-    "revision": "f05d55b44eec23ab9fb7",
-    "url": "/ReactUrbennAdminPanel/static/css/main.7eea05e3.chunk.css"
+    "revision": "1d55c29034be9096ee2e",
+    "url": "/ReactUrbennAdminPanel/static/css/main.8324d8b8.chunk.css"
   },
   {
     "revision": "10dc089e62b162f6d7d8",
@@ -20,20 +20,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactUrbennAdminPanel/static/js/3.56fb4ef1.chunk.js"
   },
   {
-    "revision": "5b238b389f861d436d82",
-    "url": "/ReactUrbennAdminPanel/static/js/4.1544c224.chunk.js"
+    "revision": "4b7f1e84ddb6e289a591",
+    "url": "/ReactUrbennAdminPanel/static/js/4.c8dcaaa8.chunk.js"
   },
   {
     "revision": "fdcf0900455434d83c91",
     "url": "/ReactUrbennAdminPanel/static/js/5.ac86c48a.chunk.js"
   },
   {
-    "revision": "f05d55b44eec23ab9fb7",
+    "revision": "1d55c29034be9096ee2e",
     "url": "/ReactUrbennAdminPanel/static/js/main.af54abc5.chunk.js"
   },
   {
-    "revision": "f45f10bca48283ec3d44",
-    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.607c5f1b.js"
+    "revision": "c40de0730a8227139b57",
+    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.9486d1ca.js"
   },
   {
     "revision": "0cb0b9c589c0624c9c78dd3d83e946f6",
@@ -2072,8 +2072,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactUrbennAdminPanel/static/media/un.e6aabbd5.svg"
   },
   {
-    "revision": "d933c05513344595530d6abb53b8f0ca",
-    "url": "/ReactUrbennAdminPanel/static/media/urbenn-logo-no-text.d933c055.svg"
+    "revision": "42eaf5ca5c29566e9ef43ae0462af2c0",
+    "url": "/ReactUrbennAdminPanel/static/media/urbenn-logo.42eaf5ca.svg"
   },
   {
     "revision": "8ec583188aba7e9426580350312d97a5",

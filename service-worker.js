@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ReactUrbennAdminPanel/precache-manifest.dbe5ec9d974596ce8730f61eb44eb6cb.js"
+  "/ReactUrbennAdminPanel/precache-manifest.43a888689d2f2f40b6b038895022d394.js"
 );
 
 self.addEventListener('message', (event) => {
