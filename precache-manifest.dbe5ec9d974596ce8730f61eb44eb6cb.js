@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe74c2a1da7f7e9bce43452139a4a5e9",
+    "revision": "0935ba6493c4bf79af532d9643353f7f",
     "url": "/ReactUrbennAdminPanel/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactUrbennAdminPanel/static/css/3.6cb858c5.chunk.css"
   },
   {
-    "revision": "6403023cb2a770bf1337",
+    "revision": "f05d55b44eec23ab9fb7",
     "url": "/ReactUrbennAdminPanel/static/css/main.7eea05e3.chunk.css"
   },
   {
@@ -20,20 +20,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactUrbennAdminPanel/static/js/3.56fb4ef1.chunk.js"
   },
   {
-    "revision": "f124f111b5c463c26475",
-    "url": "/ReactUrbennAdminPanel/static/js/4.0b6893d8.chunk.js"
+    "revision": "5b238b389f861d436d82",
+    "url": "/ReactUrbennAdminPanel/static/js/4.1544c224.chunk.js"
   },
   {
     "revision": "fdcf0900455434d83c91",
     "url": "/ReactUrbennAdminPanel/static/js/5.ac86c48a.chunk.js"
   },
   {
-    "revision": "6403023cb2a770bf1337",
-    "url": "/ReactUrbennAdminPanel/static/js/main.7564f883.chunk.js"
+    "revision": "f05d55b44eec23ab9fb7",
+    "url": "/ReactUrbennAdminPanel/static/js/main.af54abc5.chunk.js"
   },
   {
-    "revision": "b2cf59efd3d08b73be9b",
-    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.72e54666.js"
+    "revision": "f45f10bca48283ec3d44",
+    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.607c5f1b.js"
   },
   {
     "revision": "0cb0b9c589c0624c9c78dd3d83e946f6",
