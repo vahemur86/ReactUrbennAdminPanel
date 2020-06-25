@@ -1,6 +1,7 @@
 {
   "name": "justdo-react-pro",
   "version": "1.1.0",
+  "homepage": "https://vahemur86.github.io/ReactUrbennAdminPanel",
   "private": true,
   "dependencies": {
     "@fullcalendar/core": "^4.3.1",

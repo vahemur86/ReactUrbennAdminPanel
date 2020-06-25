@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fea28cee-deda-473d-8b9a-338c1ee42303" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1daXlacYfJCCxPJ64JbNbrOaf6F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../urbenn-admin-pannel1" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\view\pages" />
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\view\components" />
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\view" />
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\app\icons" />
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\app\Ui" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\core\constants" />
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\services\operations\testOeration" />
+      <recent name="C:\Project\urbenn-admin-pannel-dark\src\controllers\test" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fea28cee-deda-473d-8b9a-338c1ee42303" name="Default Changelist" comment="" />
+      <created>1592664329706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592664329706</updated>
+      <workItem from="1592664331217" duration="637000" />
+      <workItem from="1592664997774" duration="5493000" />
+      <workItem from="1592717443601" duration="17220000" />
+      <workItem from="1592847630821" duration="52058000" />
+      <workItem from="1593002859244" duration="396000" />
+      <workItem from="1593003258022" duration="12972000" />
+      <workItem from="1593065213776" duration="5750000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1340" y="-84" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592998661119">
+      <screen x="-1920" y="-243" width="1920" height="1040" />
+    </state>
+    <state x="-1340" y="-84" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-243.1920.1040@-1920.-243.1920.1040" timestamp="1592998661119" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592987346312" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1593066509658">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1269" y="-73" key="FileChooserDialogImpl/0.0.1366.728/-1920.-243.1920.1040@-1920.-243.1920.1040" timestamp="1592998284251" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/-1920.-243.1920.1040@0.0.1366.728" timestamp="1592833975635" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593066509658" />
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1593009731672">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1372" y="-243" width="823" height="1040" key="find.popup/0.0.1366.728/-1920.-243.1920.1040@-1920.-243.1920.1040" timestamp="1592997517181" />
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1593009731672" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592939916033">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592939916033" />
+  </component>
+</project>
