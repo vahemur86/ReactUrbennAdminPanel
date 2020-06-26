@@ -213,50 +213,23 @@ const columns = [
     dataField: 'id',
     text: 'Номер #',
     sort: true
-  }, {
+  },
+  {
     dataField: 'purchasedOn',
     text: 'Название Категории',
     sort: true
-  }, {
+  },
+  {
     dataField: 'customer',
     text: 'Разделы',
     sort: true
-  }, {
+  },
+  {
     dataField: 'shipTo',
     text: 'Дата создания',
     sort: true
-  }, {
-    dataField: 'basePrice',
-    text: 'Base Price',
-    sort: true
-  }, {
-    dataField: 'purchasedPrice',
-    text: 'Purchased Price',
-    sort: true
-  }, {
-    dataField: 'status',
-    text: 'Status',
-    sort: true,
-    formatter: (cellContent, row) => {
-      if (cellContent === 'On hold') {
-        return (
-          <label className="badge badge-info">On hold</label>
-        );
-      } else if (cellContent === 'Pending' ) {
-        return (
-          <label className="badge badge-danger">Pending</label>
-        );
-      } else if (cellContent === 'Closed') {
-        return (
-          <label className="badge badge-success">Closed</label>
-        );
-      } else if (cellContent === 'Open') {
-        return (
-          <label className="badge badge-warning">Open</label>
-        );
-      }
-    }
-  }, {
+  },
+  {
     dataField: 'action',
     text: 'Action',
     sort: false,
@@ -270,7 +243,6 @@ const columns = [
               <i className="mdi mdi-close text-danger"/>Remove
             </button>
             <button type="button" className="btn btn-dark btn-icon-text">
-
               <i className="ti-file btn-icon-append"/>  Edit
             </button>
           </div>
