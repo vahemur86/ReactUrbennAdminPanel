@@ -1,35 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c93380e2f9562649c1ca0c4903ed5c5",
+    "revision": "f19ee46e2effb135b945bff746e0ff84",
     "url": "/ReactUrbennAdminPanel/index.html"
   },
   {
-    "revision": "af63c4dff3d1ca984774",
-    "url": "/ReactUrbennAdminPanel/static/css/2.6cb858c5.chunk.css"
+    "revision": "766726d2d57b4dbac40b",
+    "url": "/ReactUrbennAdminPanel/static/css/3.6cb858c5.chunk.css"
   },
   {
-    "revision": "5b83e92f370052a1431f",
-    "url": "/ReactUrbennAdminPanel/static/css/main.8324d8b8.chunk.css"
+    "revision": "1afc8c814c9aafd0763b",
+    "url": "/ReactUrbennAdminPanel/static/css/main.61fa6668.chunk.css"
   },
   {
-    "revision": "af63c4dff3d1ca984774",
-    "url": "/ReactUrbennAdminPanel/static/js/2.a690f487.chunk.js"
+    "revision": "fd2b7c721684ffac99d0",
+    "url": "/ReactUrbennAdminPanel/static/js/2.d5c646b8.chunk.js"
   },
   {
-    "revision": "d65e05ad494128162cec",
-    "url": "/ReactUrbennAdminPanel/static/js/3.be7d412c.chunk.js"
+    "revision": "766726d2d57b4dbac40b",
+    "url": "/ReactUrbennAdminPanel/static/js/3.e6120aa0.chunk.js"
   },
   {
-    "revision": "ef286e8165b4f1a5b427",
-    "url": "/ReactUrbennAdminPanel/static/js/4.c3267f8f.chunk.js"
+    "revision": "815e4bf8b9f861b55c36",
+    "url": "/ReactUrbennAdminPanel/static/js/4.9a05cc6f.chunk.js"
   },
   {
-    "revision": "5b83e92f370052a1431f",
-    "url": "/ReactUrbennAdminPanel/static/js/main.e9598250.chunk.js"
+    "revision": "083fcb23b421d018b11e",
+    "url": "/ReactUrbennAdminPanel/static/js/5.299f3bed.chunk.js"
   },
   {
-    "revision": "c9b9918ef40adefc00bb",
-    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.89db16c6.js"
+    "revision": "3549dbb4c991f7c36917",
+    "url": "/ReactUrbennAdminPanel/static/js/6.f9858680.chunk.js"
+  },
+  {
+    "revision": "b706b034adae52098bf9",
+    "url": "/ReactUrbennAdminPanel/static/js/7.8a3faebc.chunk.js"
+  },
+  {
+    "revision": "1afc8c814c9aafd0763b",
+    "url": "/ReactUrbennAdminPanel/static/js/main.d06f968a.chunk.js"
+  },
+  {
+    "revision": "0e455b8b745e2cc327a7",
+    "url": "/ReactUrbennAdminPanel/static/js/runtime~main.6d5cbd22.js"
   },
   {
     "revision": "0cb0b9c589c0624c9c78dd3d83e946f6",
