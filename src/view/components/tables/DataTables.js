@@ -4,7 +4,7 @@ import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 const { SearchBar } = Search;
 
-var products = [
+const products = [
   {
     id: 'XN-1',
     purchasedOn: '25/09/2019',
@@ -207,22 +207,23 @@ var products = [
   },
 ];
 
+
 const columns = [
   {
     dataField: 'id',
-    text: 'Order #',
+    text: 'Номер #',
     sort: true
   }, {
     dataField: 'purchasedOn',
-    text: 'Purchased On',
+    text: 'Название Категории',
     sort: true
   }, {
     dataField: 'customer',
-    text: 'Customer',
+    text: 'Разделы',
     sort: true
   }, {
     dataField: 'shipTo',
-    text: 'Ship to',
+    text: 'Дата создания',
     sort: true
   }, {
     dataField: 'basePrice',
@@ -261,11 +262,18 @@ const columns = [
     sort: false,
     formatter: () => {
       return (
-        <div>
-          <button className="btn btn-dark">
-            <i className="ti-eye text-primary"></i>View
-          </button>
-        </div>
+          <div>
+            <button className="btn btn-dark ml-2">
+              <i className="mdi mdi-eye-outline text-primary"/>View
+            </button>
+            <button className="btn btn-dark ml-2">
+              <i className="mdi mdi-close text-danger"/>Remove
+            </button>
+            <button type="button" className="btn btn-dark btn-icon-text">
+
+              <i className="ti-file btn-icon-append"/>  Edit
+            </button>
+          </div>
       );
     }
   }

@@ -5,6 +5,7 @@ import Spinner from './shared/Spinner';
 const Login = lazy(() => import('./user-pages/Login2'));
 const Dashboard = lazy(() => import('./components/dashboard/Dashboard'));
 const Register1 = lazy(() => import('./user-pages/Register'));
+const DataTable = lazy(() => import('./components/tables/DataTables'));
 // const Register2 = lazy(() => import('./user-pages/Register2'));
 // const KanbanBoard = lazy(() => import('./components/apps/KanbanBoard'));
 // const Chats = lazy(() => import('./components/apps/Chats'));
@@ -37,7 +38,7 @@ const Register1 = lazy(() => import('./user-pages/Register'));
 // const Wizard = lazy(() => import('./components/form-elements/Wizard'));
 //
 // const BasicTable = lazy(() => import('./components/tables/BasicTable'));
-// const DataTable = lazy(() => import('./components/tables/DataTables'));
+
 // const ReactTable = lazy(() => import('./components/tables/ReactTable'));
 // const SortableTable = lazy(() => import('./components/tables/SortableTable'));
 //
@@ -96,10 +97,10 @@ class AppRoutes extends Component {
     return (
       <Suspense fallback={<Spinner/>}>
         <Switch>
-
             <Route path="/user-pages/login-1" component={ Login } />
             <Route exact path="/dashboard" component={ Dashboard } />
             <Route path="/user-pages/register-1" component={ Register1 } />
+            <Route path="/tables/data-table" component={ DataTable } />
             <Redirect to="/user-pages/login-1" />
        {/*   <Route path="/user-pages/login-2" component={ Login2 } />
 
@@ -141,7 +142,7 @@ class AppRoutes extends Component {
           {/*<Route path="/form-Elements/wizard" component={ Wizard } />*/}
 
           {/*<Route path="/tables/basic-table" component={ BasicTable } />*/}
-          {/*<Route path="/tables/data-table" component={ DataTable } />*/}
+
           {/*<Route path="/tables/react-table" component={ ReactTable } />*/}
           {/*<Route path="/tables/sortable-table" component={ SortableTable } />*/}
 

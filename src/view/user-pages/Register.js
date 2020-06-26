@@ -72,7 +72,7 @@ const Register = () => {
 
                   <div className="mt-3">
                     <Link className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                          to="/dashboard">Сохранить</Link>
+                          to="/tables/data-table">Сохранить</Link>
                   </div>
 
                 </form>
