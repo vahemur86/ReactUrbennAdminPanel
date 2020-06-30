@@ -56,10 +56,11 @@ class UrbanAdminApiHandler extends ApiHandler {
     }
 
     post(endPoint, formData = {}, queryFields = '') {
-        return super.post(`${this.domain}/${this.prefix}/${endPoint ? endPoint + '/' : ''}${this._createQuery(queryFields)}`, formData).then(this._checkResponse.bind(this));
+        return super.post(`${this.domain}/${this.prefix}/${endPoint ? endPoint  : ''}${this._createQuery(queryFields)}`, formData).then(this._checkResponse.bind(this));
     }
 
     put(endPoint, formData, queryFields = '', isFormData) {
+
         return super.put(`${this.domain}/${this.prefix}/${endPoint}${this._createQuery(queryFields)}`, formData, isFormData).then(this._checkResponse.bind(this));
     }
 

@@ -1,5 +1,6 @@
-import React, { Component,Suspense, lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+
 
 import Spinner from './shared/Spinner';
 const Login = lazy(() => import('./user-pages/Login2'));
@@ -92,114 +93,110 @@ const DataTable = lazy(() => import('./components/tables/DataTables'));
 
 
 // const Widgets = lazy(() => import('./widgets/Widgets'));
-class AppRoutes extends Component {
-  render () {
+const AppRoutes = ({history})=> {
+
     return (
-      <Suspense fallback={<Spinner/>}>
-        <Switch>
-            <Route path="/user-pages/login-1" component={ Login } />
-            <Route exact path="/dashboard" component={ Dashboard } />
-            <Route path="/user-pages/register-1" component={ Register1 } />
-            <Route path="/tables/data-table" component={ DataTable } />
-            <Redirect to="/user-pages/login-1" />
-       {/*   <Route path="/user-pages/login-2" component={ Login2 } />
+        <Suspense fallback={<Spinner/>}>
+            <Switch>
+
+                <Route path="/user-pages/login" component={Login}/>
+                <Route exact path="/dashboard" component={Dashboard}/>
+                <Route path="/user-pages/register" component={Register1}/>
+                <Route path="/tables/data-table" component={DataTable}/>
+                <Redirect to="/user-pages/login"/>
+                {/*   <Route path="/user-pages/login-2" component={ Login2 } />
 
           <Route path="/user-pages/register-2" component={ Register2 } />
           <Route path="/user-pages/lockscreen" component={ Lockscreen } />*/}
 
 
+                {/*<Route exact path="/widgets" component={ Widgets } />*/}
 
-          {/*<Route exact path="/widgets" component={ Widgets } />*/}
+                {/*<Route exact path="/apps/kanban-board" component={ KanbanBoard } />*/}
+                {/*<Route exact path="/apps/todo-list" component={ TodoList } />*/}
+                {/*<Route exact path="/apps/chats" component={ Chats } />*/}
 
-          {/*<Route exact path="/apps/kanban-board" component={ KanbanBoard } />*/}
-          {/*<Route exact path="/apps/todo-list" component={ TodoList } />*/}
-          {/*<Route exact path="/apps/chats" component={ Chats } />*/}
+                {/*<Route path="/basic-ui/accordions" component={ Accordions } />*/}
+                {/*<Route path="/basic-ui/buttons" component={ Buttons } />*/}
+                {/*<Route path="/basic-ui/badges" component={ Badges } />*/}
+                {/*<Route path="/basic-ui/breadcrumbs" component={ Breadcrumbs } />*/}
+                {/*<Route path="/basic-ui/dropdowns" component={ Dropdowns } />*/}
+                {/*<Route path="/basic-ui/modals" component={ Modals } />*/}
+                {/*<Route path="/basic-ui/progressbar" component={ Progress } />*/}
+                {/*<Route path="/basic-ui/pagination" component={ Paginations } />*/}
+                {/*<Route path="/basic-ui/tabs" component={ TabsPage } />*/}
+                {/*<Route path="/basic-ui/typography" component={ Typography } />*/}
+                {/*<Route path="/basic-ui/tooltips" component={ Tooltips } />*/}
+                {/*<Route path="/basic-ui/popups" component={ Popups } />*/}
 
-          {/*<Route path="/basic-ui/accordions" component={ Accordions } />*/}
-          {/*<Route path="/basic-ui/buttons" component={ Buttons } />*/}
-          {/*<Route path="/basic-ui/badges" component={ Badges } />*/}
-          {/*<Route path="/basic-ui/breadcrumbs" component={ Breadcrumbs } />*/}
-          {/*<Route path="/basic-ui/dropdowns" component={ Dropdowns } />*/}
-          {/*<Route path="/basic-ui/modals" component={ Modals } />*/}
-          {/*<Route path="/basic-ui/progressbar" component={ Progress } />*/}
-          {/*<Route path="/basic-ui/pagination" component={ Paginations } />*/}
-          {/*<Route path="/basic-ui/tabs" component={ TabsPage } />*/}
-          {/*<Route path="/basic-ui/typography" component={ Typography } />*/}
-          {/*<Route path="/basic-ui/tooltips" component={ Tooltips } />*/}
-          {/*<Route path="/basic-ui/popups" component={ Popups } />*/}
+                {/*<Route path="/advanced-ui/dragula" component={ Dragula } />*/}
+                {/*<Route path="/advanced-ui/clipboard" component={ Clipboard } />*/}
+                {/*<Route path="/advanced-ui/context-menu" component={ ContextMenu } />*/}
+                {/*<Route path="/advanced-ui/sliders" component={ Sliders } />*/}
+                {/*<Route path="/advanced-ui/carousel" component={ Carousel } />*/}
+                {/*<Route path="/advanced-ui/loaders" component={ Loaders } />*/}
+                {/*<Route path="/advanced-ui/tree-view" component={ TreeView } />*/}
 
-          {/*<Route path="/advanced-ui/dragula" component={ Dragula } />*/}
-          {/*<Route path="/advanced-ui/clipboard" component={ Clipboard } />*/}
-          {/*<Route path="/advanced-ui/context-menu" component={ ContextMenu } />*/}
-          {/*<Route path="/advanced-ui/sliders" component={ Sliders } />*/}
-          {/*<Route path="/advanced-ui/carousel" component={ Carousel } />*/}
-          {/*<Route path="/advanced-ui/loaders" component={ Loaders } />*/}
-          {/*<Route path="/advanced-ui/tree-view" component={ TreeView } />*/}
+                {/*<Route path="/form-Elements/basic-elements" component={ BasicElements } />*/}
+                {/*<Route path="/form-Elements/advanced-elements" component={ AdvancedElements } />*/}
+                {/*<Route path="/form-Elements/validation" component={ Validation } />*/}
+                {/*<Route path="/form-Elements/wizard" component={ Wizard } />*/}
 
-          {/*<Route path="/form-Elements/basic-elements" component={ BasicElements } />*/}
-          {/*<Route path="/form-Elements/advanced-elements" component={ AdvancedElements } />*/}
-          {/*<Route path="/form-Elements/validation" component={ Validation } />*/}
-          {/*<Route path="/form-Elements/wizard" component={ Wizard } />*/}
+                {/*<Route path="/tables/basic-table" component={ BasicTable } />*/}
 
-          {/*<Route path="/tables/basic-table" component={ BasicTable } />*/}
+                {/*<Route path="/tables/react-table" component={ ReactTable } />*/}
+                {/*<Route path="/tables/sortable-table" component={ SortableTable } />*/}
 
-          {/*<Route path="/tables/react-table" component={ ReactTable } />*/}
-          {/*<Route path="/tables/sortable-table" component={ SortableTable } />*/}
+                {/*<Route path="/maps/vector-map" component={ VectorMap } />*/}
+                {/*<Route path="/maps/simple-map" component={ SimpleMap } />*/}
 
-          {/*<Route path="/maps/vector-map" component={ VectorMap } />*/}
-          {/*<Route path="/maps/simple-map" component={ SimpleMap } />*/}
+                {/*<Route path="/notifications" component={ Notifications } />*/}
 
-          {/*<Route path="/notifications" component={ Notifications } />*/}
+                {/*<Route path="/icons/mdi" component={ Mdi } />*/}
+                {/*<Route path="/icons/flag-icons" component={ FlagIcons } />*/}
+                {/*<Route path="/icons/font-awesome" component={ FontAwesome } />*/}
+                {/*<Route path="/icons/simple-line" component={ SimpleLine } />*/}
+                {/*<Route path="/icons/themify" component={ Themify } />*/}
+                {/*<Route path="/icons/typicons" component={ TypIcons } />*/}
 
-          {/*<Route path="/icons/mdi" component={ Mdi } />*/}
-          {/*<Route path="/icons/flag-icons" component={ FlagIcons } />*/}
-          {/*<Route path="/icons/font-awesome" component={ FontAwesome } />*/}
-          {/*<Route path="/icons/simple-line" component={ SimpleLine } />*/}
-          {/*<Route path="/icons/themify" component={ Themify } />*/}
-          {/*<Route path="/icons/typicons" component={ TypIcons } />*/}
+                {/*<Route path="/editors/text-editors" component={ TextEditors } />*/}
+                {/*<Route path="/editors/code-editor" component={ CodeEditor } />*/}
 
-          {/*<Route path="/editors/text-editors" component={ TextEditors } />*/}
-          {/*<Route path="/editors/code-editor" component={ CodeEditor } />*/}
+                {/*<Route path="/icons/themify" component={ Themify } />*/}
 
-          {/*<Route path="/icons/themify" component={ Themify } />*/}
-
-          {/*<Route path="/charts/chart-js" component={ ChartJs } />*/}
-          {/*<Route path="/charts/c3-chart" component={ C3Charts } />*/}
-          {/*<Route path="/charts/chartist" component={ Chartist } />*/}
-          {/*<Route path="/charts/google-charts" component={ GoogleCharts } />*/}
-          {/*<Route path="/charts/sparkline-charts" component={ SparkLineCharts } />*/}
-          {/*<Route path="/charts/guage-chart" component={ GuageChart } />*/}
-
+                {/*<Route path="/charts/chart-js" component={ ChartJs } />*/}
+                {/*<Route path="/charts/c3-chart" component={ C3Charts } />*/}
+                {/*<Route path="/charts/chartist" component={ Chartist } />*/}
+                {/*<Route path="/charts/google-charts" component={ GoogleCharts } />*/}
+                {/*<Route path="/charts/sparkline-charts" component={ SparkLineCharts } />*/}
+                {/*<Route path="/charts/guage-chart" component={ GuageChart } />*/}
 
 
-          {/*<Route path="/error-pages/error-404" component={ Error404 } />*/}
-          {/*<Route path="/error-pages/error-500" component={ Error500 } />*/}
+                {/*<Route path="/error-pages/error-404" component={ Error404 } />*/}
+                {/*<Route path="/error-pages/error-500" component={ Error500 } />*/}
 
-          {/*<Route path="/general-pages/blank-page" component={ BlankPage } />*/}
-          {/*<Route path="/general-pages/profile" component={ Profile } />*/}
-          {/*<Route path="/general-pages/faq-1" component={ Faq } />*/}
-          {/*<Route path="/general-pages/faq-2" component={ Faq2 } />*/}
-          {/*<Route path="/general-pages/news-grid" component={ NewsGrid } />*/}
-          {/*<Route path="/general-pages/timeline" component={ Timeline } />*/}
-          {/*<Route path="/general-pages/search-results" component={ SearchResults } />*/}
-          {/*<Route path="/general-pages/portfolio" component={ Portfolio } />*/}
+                {/*<Route path="/general-pages/blank-page" component={ BlankPage } />*/}
+                {/*<Route path="/general-pages/profile" component={ Profile } />*/}
+                {/*<Route path="/general-pages/faq-1" component={ Faq } />*/}
+                {/*<Route path="/general-pages/faq-2" component={ Faq2 } />*/}
+                {/*<Route path="/general-pages/news-grid" component={ NewsGrid } />*/}
+                {/*<Route path="/general-pages/timeline" component={ Timeline } />*/}
+                {/*<Route path="/general-pages/search-results" component={ SearchResults } />*/}
+                {/*<Route path="/general-pages/portfolio" component={ Portfolio } />*/}
 
-          {/*<Route path="/ecommerce/invoice" component={ Invoice } />*/}
-          {/*<Route path="/ecommerce/pricing" component={ Pricing } />*/}
-          {/*<Route path="/ecommerce/product-catalogue" component={ ProductCatalogue } />*/}
-          {/*<Route path="/ecommerce/project-list" component={ ProjectList } />*/}
-          {/*<Route path="/ecommerce/orders" component={ Orders } />*/}
+                {/*<Route path="/ecommerce/invoice" component={ Invoice } />*/}
+                {/*<Route path="/ecommerce/pricing" component={ Pricing } />*/}
+                {/*<Route path="/ecommerce/product-catalogue" component={ ProductCatalogue } />*/}
+                {/*<Route path="/ecommerce/project-list" component={ ProjectList } />*/}
+                {/*<Route path="/ecommerce/orders" component={ Orders } />*/}
 
-          {/*<Route path="/apps/email" component={ Email } />*/}
-          {/*<Route path="/apps/calendar" component={ Calendar } />*/}
-          {/*<Route path="/apps/gallery" component={ Gallery } />*/}
+                {/*<Route path="/apps/email" component={ Email } />*/}
+                {/*<Route path="/apps/calendar" component={ Calendar } />*/}
+                {/*<Route path="/apps/gallery" component={ Gallery } />*/}
 
-
-
-        </Switch>
-      </Suspense>
+            </Switch>
+        </Suspense>
     );
-  }
 }
 
 export default AppRoutes;

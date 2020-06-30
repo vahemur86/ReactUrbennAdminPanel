@@ -32,9 +32,10 @@ class ApiHandler {
 
 
   post(url = '', body) {
+    console.log('body',body)
     return fetch(url, {
       method: API_METHODS.POST,
-      headers: this.createHeaders(),
+      headers :{'Content-Type': 'application/json'},
       body: JSONHelper.stringify(body)
     }).then(res =>this.errorAndSuccessFilter(res));
   }

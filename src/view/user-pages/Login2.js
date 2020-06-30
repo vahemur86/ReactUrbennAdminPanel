@@ -1,12 +1,18 @@
 import React, {useState} from 'react';
+import { cntrlAunthenticate ,rxSetIsAuth} from '../../state-management/actions/tokenActions';
+import {connect, useSelector} from 'react-redux';
 
-import {cntrlGetTest} from '../../state-management/actions/testAction';
-import {connect} from 'react-redux';
-
-const Login2 = function ({history ,test, login}){
+const Login = function ({history ,setIsAuth, login}){
   const [password, setPassword] = useState(null);
   const [username, setUserName] = useState(null);
+  const [checkUsername, setCheckUsername] = useState(true);
   const [isSuccess, setIsSuccess] = useState(null);
+  const isAuth = useSelector(({auth}) => auth.isAuthReducer);
+
+  function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
 
   const getUserNameValue = (e) => {
     setUserName(e.target.value)
@@ -16,31 +22,31 @@ const Login2 = function ({history ,test, login}){
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // login(
-    //     {
-    //         username: username.trim(),
-    //         password: password.trim()
-    //     }
-    // ).then(res => {
-    //     if (!(res.hasOwnProperty('error'))) {
-    //         const clientId = JSON.parse(atob(res.accessToken.split('.')[1]));
-    //         console.log('login')
-    //     }else{
-    //         setIsSuccess(false)
-    //        console.log('error')
-    //     }
-    // })
-     if( username === null && password === null){
-         setIsSuccess(false);
-         test()
-         return;
-     }
-      setIsSuccess(true);
+    setCheckUsername(validateEmail(username))
+    return
+    login(
+        {
+          email: username.trim(),
+          password: password.trim()
+        }
+    ).then(res => {
+        if (!(res.hasOwnProperty('errorMessage')) ) {
+          setIsAuth(true);
+          setIsSuccess(true);
+          // const clientId = JSON.parse(atob(res.accessToken.split('.')[1]));
+
+        }else{
+            setIsSuccess(false)
+        }
+    })
+
+
   };
 
   if (isSuccess===true) {
     history.push('/dashboard')
   }
+  console.log(checkUsername)
     return (
       <div>
         <div className="d-flex align-items-stretch auth auth-img-bg h-100">
@@ -58,8 +64,9 @@ const Login2 = function ({history ,test, login}){
                             className="fade alert alert-danger show"> Неверный логин или пароль
                         </div>
                     }
-                  <div className="form-group">
-                    <div className="input-group">
+
+                  <div className={" form-group"}>
+                    <div className={ `${!checkUsername  ?'err-valid-feedback-border ':' '} input-group`}>
                       <div className="input-group-prepend bg-transparent">
                         <span className="input-group-text bg-transparent border-right-0">
                           <i className="ti-user text-primary"/>
@@ -67,10 +74,11 @@ const Login2 = function ({history ,test, login}){
                       </div>
                       <input type="email"
                              onChange = {getUserNameValue}
-                             className="form-control form-control-lg border-left-0"
+                             className={ 'form-control form-control-lg border-left-0'}
                              id="exampleInputEmail"
                              placeholder="Эл. почта" />
                     </div>
+                    {!checkUsername && <div className="err-valid-feedback">Please choose a Email.</div>}
                   </div>
                   <div className="form-group">
                     <div className="input-group">
@@ -100,9 +108,7 @@ const Login2 = function ({history ,test, login}){
 
 }
 const mapDispatchToProps = dispatch => ({
-  test: ()=> dispatch(cntrlGetTest()),
-  // login : data => dispatch(cntrlAunthenticate(data)),
-  // init : () => dispatch(cntrlAppInit()),
+  login : data => dispatch(cntrlAunthenticate(data)),
+  setIsAuth : (bool) => dispatch(rxSetIsAuth(bool)),
 });
-export default connect(null, mapDispatchToProps)(Login2)
-// export default Login2
+export default connect(null, mapDispatchToProps)(Login)

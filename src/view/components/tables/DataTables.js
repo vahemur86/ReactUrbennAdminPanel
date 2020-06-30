@@ -207,7 +207,6 @@ const products = [
   },
 ];
 
-
 const columns = [
   {
     dataField: 'id',

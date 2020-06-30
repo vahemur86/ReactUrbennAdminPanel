@@ -1,10 +1,10 @@
-// import { tokenReducers } from './tokenReducer';
+import { tokenReducers } from './tokenReducer';
 // import {usersReducer} from "./usersReducer";
-import {testReducer} from "./testReducer";
+// import {testReducer} from "./testReducer";
 
 
 export  {
-  // tokenReducers,
+  tokenReducers,
   // usersReducer,
-  testReducer
+  // testReducer
 }

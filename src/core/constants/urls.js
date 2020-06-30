@@ -1,4 +1,4 @@
-const DOMAIN = 'https://swapi.dev';
+const DOMAIN = 'http://urbentest.bangits.com';
 export const API = `${DOMAIN}/api`;
 
 // if(process.env.REACT_APP_ENV === 'production'){

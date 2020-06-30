@@ -9,3 +9,16 @@
     }
   }
 }
+/*resgistration page */
+.auth {
+  .auth-form-dark{
+    overflow: auto;
+  }
+}
+.err-valid-feedback-border{
+  border: solid 1px #dc3545;
+}
+.err-valid-feedback{
+  color: #dc3545 !important;
+  font-size: 13px !important;
+}

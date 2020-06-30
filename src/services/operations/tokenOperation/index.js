@@ -1,4 +1,3 @@
-import Operations from '../../../core/classes/AppOperation';
 import { authSchemeFactory } from '../../../core/utils/authUtil';
 import responseErrorCheck from '../../../core/helpers/responseErrorChecker';
 import ApiHandler from '../../../core/classes/ApiHandler';
@@ -8,26 +7,22 @@ import {rxSetIsAuth} from "../../../state-management/actions/tokenActions";
 
 
 
-class TokenOperation extends Operations{
+class TokenOperation  {
   constructor(tokenApiHandler){
-    super();
     this.tokenApiHandler = tokenApiHandler;
     this.expirationInsurance = 100;
   }
 
-  async authanticate(data){
-    const {username , password} = data;
-    const response = await this.authApp(username , password);
+  async authenticate(data){
+    const {email , password} = data;
+    const response = await this.authApp(email , password);
     if(response.hasOwnProperty('accessToken')){
       this._attachTimer(response)
     }
     return response;
-
   }
 
   _attachTimer(response){
-
-
     const timer = (response.expiresIn - this.expirationInsurance) * 1000;
     this._tokenAccessConfig(response);
     clearTimeout(ApiHandler.refreshTimer);
@@ -52,8 +47,8 @@ class TokenOperation extends Operations{
     return result
   }
 
-  async authApp(username, password) {
-    const response = await this.tokenApiHandler.authenticate(authSchemeFactory()(username, password));
+  async authApp(email, password) {
+    const response = await this.tokenApiHandler.authenticate(authSchemeFactory()(email, password));
     return responseErrorCheck(response);
   }
 

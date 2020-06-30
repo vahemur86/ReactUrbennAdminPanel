@@ -1,12 +1,12 @@
 // import AppController from './appController';
-// import TokenController from './tokenController';
 // import UserController from "./userController";
+import TokenController from './tokenController';
 import TestController from "./testController";
 
 
 export {
   // AppController,
-  // TokenController,
   // UserController,
-  TestController
+  TestController,
+  TokenController
 };

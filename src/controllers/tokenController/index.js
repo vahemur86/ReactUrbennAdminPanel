@@ -1,15 +1,15 @@
-import Controller from '../../core/classes/AppController';
 import {rxSetIsAuth} from "../../state-management/actions/tokenActions";
 
-class TokenController extends Controller{
+class TokenController {
   constructor(tokenOperation){
-    super();
+
     this.tokenOperation = tokenOperation;
   }
 
   authenticate = async (store , action) =>{
+
     try {
-      const response = await this.tokenOperation.authanticate(action.payload);
+      const response = await this.tokenOperation.authenticate(action.payload);
       return response;
     }catch (e) {
       return new Error(e);

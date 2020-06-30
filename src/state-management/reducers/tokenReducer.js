@@ -1,6 +1,6 @@
 import createReducer from '../../core/helpers/createReducer';
 import { getIsAuthDefaultValue } from '../../core/constants/authUtil';
-import { AUTH_TYPES, TOKEN } from '../../core/constants/actionTypes';
+import { AUTH_TYPES } from '../../core/constants/actionTypes';
 import {combineReducers} from 'redux';
 
 

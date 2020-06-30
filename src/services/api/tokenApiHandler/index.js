@@ -1,8 +1,8 @@
 import UrbanAdminApiHandler from '../urbanAdminApiHandler';
 
 const END_POINT = {
-  prefix : 'Token',
-  refresh : 'refresh'
+  prefix : 'User/LogIn',
+  // refresh : 'refresh'
 };
 class TokenApiHandler extends UrbanAdminApiHandler{
 
@@ -10,9 +10,9 @@ class TokenApiHandler extends UrbanAdminApiHandler{
     return this.post(null , data);
   }
 
-  refreshToken(){
-    return this.post(END_POINT.refresh)
-  }
+  // refreshToken(){
+  //   return this.post(END_POINT.refresh)
+  // }
 }
 
 const tokenApiHandler = new TokenApiHandler(END_POINT.prefix);

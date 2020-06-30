@@ -1,9 +1,9 @@
-// import tokenApiHandler from './tokenApiHandler';
 // import usersApiHandler from './usersApiHandler';
+import tokenApiHandler from './tokenApiHandler';
 import testApiHandler from './testApiHandler';
 
 export {
-    // tokenApiHandler,
     // usersApiHandler,
+    tokenApiHandler,
     testApiHandler
 };

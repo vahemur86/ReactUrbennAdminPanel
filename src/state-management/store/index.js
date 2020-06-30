@@ -4,7 +4,7 @@ import configs from '../../configs/config';
 import * as reducers from '../reducers';
 
 const rootReducers = combineReducers({
-  test : reducers.testReducer,
+  auth : reducers.tokenReducers
 
 });
 

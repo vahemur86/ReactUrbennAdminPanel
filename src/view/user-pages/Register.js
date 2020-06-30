@@ -1,19 +1,33 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import {Link} from 'react-router-dom';
 import {Dropdown} from 'react-bootstrap';
 
-const CheckboxElem = ({textValue}) => {
+// onClick={ ()=> setPerson((person) => {
+//   return { ...person , firstName: 'Mike'}
+// })}
+
+ const CheckboxElem = ({textValue, foo}) => {
   return (
-      <div className={`form-check` }>
+      <div className={`form-check`}>
         <label className="form-check-label text-muted">
-          <input type="checkbox" className="form-check-input"/>
+          <input onChange={foo}
+                 type="checkbox"
+                 className="form-check-input"
+                 value={textValue}/>
           <i className="input-helper"/>
           {textValue}
         </label>
-      </div>)
+      </div>
+  )
 }
-const Register = () => {
+const mockData =['Все', 'Продавцы', 'Покупатели', 'ТК'];
 
+const Register = () => {
+  const [data, setData] = useState([]);
+  const onHandleCheck = (e) => {
+    console.log(e.target.value, e.target.checked)
+    // setData(e.target.value)
+  }
   return (
       <div>
         <div className="d-flex align-items-center auth px-0">
@@ -38,43 +52,40 @@ const Register = () => {
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <CheckboxElem textValue='text'/>
-                        <CheckboxElem textValue='text'/>
-                        <Dropdown.Header>title1</Dropdown.Header>
-                        <CheckboxElem textValue='text'/>
-                        <CheckboxElem textValue='text'/>
-                        {/*<Dropdown.Item> ddddd</Dropdown.Item>*/}
-                        {/*<Dropdown.Divider>home</Dropdown.Divider>*/}
+                        {  mockData.map((item)=> <CheckboxElem textValue={item} foo={onHandleCheck}/>)}
+                        {/*{  Object.keys(mockData1).map((item)=> <CheckboxElem textValue={item} foo={onHandleCheck}/>)}*/}
                       </Dropdown.Menu>
                     </Dropdown>
 
                   </div>
-                  <div className="form-group  my-checkbox-component">
-                    <Dropdown>
-                      <Dropdown.Toggle variant="btn btn-outline-primary" id="dropdownMenuOutlineButton1">
-                           Продавцы
-                      </Dropdown.Toggle>
+                  {
+                      <div className="form-group  my-checkbox-component">
+                          {
+                            <Dropdown>
+                              <Dropdown.Toggle variant="btn btn-outline-primary" id="dropdownMenuOutlineButton1">
 
-                      <Dropdown.Menu>
-                        <CheckboxElem textValue='text1'/>
-                        <CheckboxElem textValue='text'/>
-                        <Dropdown.Header>title</Dropdown.Header>
-                        <CheckboxElem textValue='text'/>
-                        <CheckboxElem textValue='text'/>
-                        <CheckboxElem textValue='text'/>
-                        {/*<Dropdown.Item> <CheckboxElem textValue='text'/></Dropdown.Item>*/}
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </div>
+                              </Dropdown.Toggle>
+                              <Dropdown.Menu>
+                                <Dropdown.Header>title</Dropdown.Header>
+                                <CheckboxElem textValue='text1'/>
+
+                                {/*<Dropdown.Item> <CheckboxElem textValue='text'/></Dropdown.Item>*/}
+                              </Dropdown.Menu>
+                            </Dropdown>
+                          }
+                        </div>
+                    }
                   <div className="form-group">
-                    <input type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" />
+                    <input type="password"
+                           className="form-control form-control-lg"
+                           id="exampleInputPassword1"
+                           placeholder="Password"/>
                   </div>
 
                   <div className="mt-3">
                     <Link className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
                           to="/tables/data-table">Сохранить</Link>
                   </div>
-
                 </form>
               </div>
             </div>

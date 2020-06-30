@@ -1,22 +1,14 @@
 import * as ApiHandlers from '../services/api';
-import * as Controllers from '../controllers';
 import * as Operations from '../services/operations';
-
-
+import * as Controllers from '../controllers';
 
 //operations
-const testOperation = new Operations.TestOperation(ApiHandlers.testApiHandler);
-
+const tokenOperation = new Operations.TokenOperation(ApiHandlers.tokenApiHandler);
 
 //controllers
-// const appController = new Controllers.AppController();
-// const tokenController = new Controllers.TokenController(tokenOperation);
-// const usersController = new Controllers.UserController(usersOperation);
-const testController = new Controllers.TestController(testOperation);
+const tokenController = new Controllers.TokenController(tokenOperation);
+
 
 export {
-  // appController,
-  // tokenController,
-  // usersController,
-  testController
+  tokenController,
 };
